@@ -2,9 +2,8 @@
 set -eu
 
 # Setup
-VERSION=$(grep -m 1 "version:" Cine/meson.build | cut -d"'" -f2)
-export VERSION
-export ARCH=$(uname -m)
+ARCH=$(uname -m)
+export ARCH
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export ICON=/usr/share/icons/hicolor/scalable/apps/io.github.diegopvlk.Cine.svg

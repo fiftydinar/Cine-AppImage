@@ -4,27 +4,28 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-sudo pacman -Syy --noconfirm archlinux-keyring
 #Make
-sudo pacman -S --noconfirm --needed git base-devel blueprint-compiler meson 
+pacman -Syu --noconfirm --needed blueprint-compiler meson 
 #Needed
-sudo pacman -S --noconfirm --needed gtk4 libadwaita mpv python-gobject python-mpv python-pip
+pacman -S --noconfirm --needed libadwaita mpv python-gobject python-mpv python-pip
 
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano
+get-debloated-pkgs --add-common --prefer-nano ffmpeg-mini
 
 
 echo "Installing masterkey from source packages..."
 echo "---------------------------------------------------------------"
-git clone https://github.com/diegopvlk/Cine.git
-
-cd Cine
-meson setup build --prefix=/usr
-meson compile -C build
-sudo meson install -C build
-cd ..
+git clone https://github.com/diegopvlk/Cine.git && (
+	cd ./Cine
+	TAG=$(git tag --sort=-v:refname | grep -vi 'rc\|alpha' | head -1)
+	git checkout "$TAG"
+	echo "$TAG" > ~/version
+	meson setup build --prefix=/usr
+	meson compile -C build
+	meson install -C build
+)
 
 # Comment this out if you need an AUR package
 #make-aur-package PACKAGENAME

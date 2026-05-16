@@ -1,10 +1,10 @@
 <div align="center">
 
-# cine-anylinux 🐧
+# Cine-AppImage 🐧
 
-[![GitHub Downloads](https://img.shields.io/github/downloads/TheRealYasri/cine-anylinux/total?logo=github&label=GitHub%20Downloads)](https://github.com/TheRealYasri/cine-anylinux/releases/latest)
-[![CI Build Status](https://github.com/TheRealYasri/cine-anylinux/actions/workflows/appimage.yml/badge.svg)](https://github.com/TheRealYasri/cine-anylinux/releases/latest)
-[![Latest Stable Release](https://img.shields.io/github/v/release/TheRealYasri/cine-anylinux)](https://github.com/TheRealYasri/cine-anylinux/releases/latest)
+[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Cine-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Cine-AppImage/releases/latest)
+[![CI Build Status](https://github.com/pkgforge-dev/Cine-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/Cine-AppImage/releases/latest)
+[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/Cine-AppImage)](https://github.com/pkgforge-dev/Cine-AppImage/releases/latest)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/diegopvlk/Cine/refs/heads/main/data/icons/hicolor/scalable/apps/io.github.diegopvlk.Cine.svg" width="128" />
@@ -13,7 +13,7 @@
 
 | Latest Stable Release | Upstream URL |
 | :---: | :---: |
-| [Click here](https://github.com/TheRealYasri/cine-anylinux/releases/latest) | [Click here](https://github.com/diegopvlk/Cine) |
+| [Click here](https://github.com/pkgforge-dev/Cine-AppImage/releases/latest) | [Click here](https://github.com/diegopvlk/Cine) |
 
 </div>
 
